@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizgame</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1>
+        quizzing game
+    </h1>
+    <form>
+        <input type="text" placeholder="user name"><br>
+        <input type="password" placeholder="password"><br>
+        <input type="button" value="login">
+        <p class="demo"></p>
+    </form>
+     <div id="quiz-container">
+            <div class="quiz-header">
+                <div class="question-count">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+                <div class="score">Score: <span id="score">0</span></div>
+            </div>
+             <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            
+            <div class="question" id="question"></div>
+            
+            <div class="options" id="options"></div>
+            
+            <div class="quiz-footer">
+                <button class="btn btn-secondary" id="prev-btn">Previous</button>
+                <button class="btn" id="next-btn">Next</button>
+            </div>
+        </div>
+            <div id="results-container">
+            <h2 class="results-title">Quiz Completed!</h2>
+            <div class="results-score" id="final-score">0/10</div>
+            <div class="results-message" id="results-message"></div>
+            <button class="btn" id="restart-btn">Restart Quiz</button>
+    <script src="quiz.js"></script>
+</body>
+</html>
